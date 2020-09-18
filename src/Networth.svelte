@@ -86,6 +86,7 @@
                 else{
                     days[index] += prevDay.ETH;
                 }
+                days[index] = days[index].toFixed(2);
             }); 
             initChart(days);
         }).catch((error) => {
